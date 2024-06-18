@@ -4,16 +4,16 @@ This project is a Telegram bot built using the Aiogram framework. The bot allows
 
 ## Features
 
-- **Image Generation**: Generate images using the Stable Diffusion API.
-- **Text Generation**: Generate text using the Llama3 API.
+- **Image Generation**: Generate images using the Replicate API.
+- **Text Generation**: Generate text using the Replicate API.
 - **Interactive Keyboard**: Users can choose between generating images or text through an interactive keyboard.
 
 ## Installation
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/Merunj/Aiogram-with-Stable-Diffusion-and-Llama3.git
+    cd Aiogram-with-Stable-Diffusion-and-Llama3
     ```
 
 2. **Create and activate a virtual environment**:
@@ -28,18 +28,20 @@ This project is a Telegram bot built using the Aiogram framework. The bot allows
     ```
 
 4. **Set up environment variables**:
-    Create a `.env` file in the project root directory and add your API tokens and bot token:
+    Create a `.env` file in the project root directory and add your API token:
     ```env
-    TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-    STABLE_DIFFUSION_API_TOKEN=your_stable_diffusion_api_token
-    LLAMA3_API_TOKEN=your_llama3_api_token
+    REPLICATE_API_TOKEN = 'YOUR_TOKEN'
     ```
+    In config.py add telegram token:
+   ```python
+   TOKEN = "YOUR_TOKEN"
+   ```
 
 ## Usage
 
 1. **Run the bot**:
     ```bash
-    python bot.py
+    python run.py
     ```
 
 2. **Interact with the bot**:
