@@ -70,7 +70,7 @@ When you start the bot, use the /info command, where you will be presented with 
 
 - [Aiogram](https://github.com/aiogram/aiogram) - A powerful and easy-to-use framework for Telegram Bot API.
 - [Stable Diffusion](https://replicate.com/stability-ai/stable-diffusion) - API for image generation.
-- [Llama3](https://replicate.com/llama3) - API for text generation.
+- [Llama3](https://replicate.com/meta/meta-llama-3-70b-instruct) - API for text generation.
 - [Replicate.com](https://replicate.com) - Platform providing access to machine learning models.
 
 ## Contact
