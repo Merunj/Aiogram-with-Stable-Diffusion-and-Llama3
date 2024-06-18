@@ -1,6 +1,6 @@
 from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
-from aiogram.types import Message, FSInputFile, CallbackQuery, ReplyKeyboardRemove
+from aiogram.types import Message, FSInputFile, ReplyKeyboardRemove
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 from generation import generate_ai_image, generate_ai_text
@@ -59,8 +59,3 @@ async def gene(message: Message, state: FSMContext):
 @router.message(Generate.correct_write)
 async def correct(message: Message, state: FSMContext):
     await message.answer("Нажми на кнопку!")
-
-@router.callback_query(F.data == 'back')
-async def back(callback: CallbackQuery):
-    await callback.answer()
-    await callback.message.edit_text("Вы вернулись назад", reply_markup=kb.generation_image_text)
