@@ -75,4 +75,4 @@ When you start the bot, use the /info command, where you will be presented with 
 
 ## Contact
 
-If you have any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or suggestions, feel free to open an issue or contact me at [meowsweep@gmail.com](mailto:meowsweep@gmail.com).
