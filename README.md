@@ -1,11 +1,11 @@
 # Telegram Bot using Aiogram, Stable Diffusion, and Llama3
 
-This project is a Telegram bot built using the Aiogram framework. The bot allows users to generate images using the Stable Diffusion API and generate text using the Llama3 API. The choice between image and text generation is made via keyboard buttons in the Telegram bot interface. API tokens are sourced from [replicate.com](https://replicate.com).
+This project is a Telegram bot built using the Aiogram framework. The bot allows users to generate images using the models Stable Diffusion and Llama3 using Replicate API. The choice between image and text generation is made via keyboard buttons in the Telegram bot interface. API tokens are sourced from [replicate.com](https://replicate.com).
 
 ## Features
 
-- **Image Generation**: Generate images using the Replicate API.
-- **Text Generation**: Generate text using the Replicate API.
+- **Image Generation**: Generate images using the Stable Diffusion model via the Replicate API.
+- **Text Generation**: Generate text using the Llama3 model via the Replicate API.
 - **Interactive Keyboard**: Users can choose between generating images or text through an interactive keyboard.
 
 ## Installation
@@ -45,18 +45,18 @@ This project is a Telegram bot built using the Aiogram framework. The bot allows
     ```
 
 2. **Interact with the bot**:
-    Open your Telegram app and start a chat with your bot. Use the provided keyboard buttons to generate images or text.
+    Open your Telegram app and start a chat with your bot. Use the /start command for further instructions on how to use the bot
 
 ## Configuration
 
 - **Aiogram**: Used for creating the Telegram bot.
-- **Stable Diffusion API**: Used for generating images.
-- **Llama3 API**: Used for generating text.
-- **Replicate.com**: Source of API tokens.
+- **Stable Diffusion**: Model used for generating images via the Replicate API.
+- **Llama3**: Model used for generating text via the Replicate API.
+- **Replicate.com**: Platform providing access to machine learning models.
 
 ## Example
 
-When you start the bot, you'll see a keyboard with buttons to choose between generating an image or generating text. Depending on your choice, the bot will use the appropriate API to generate and send the requested content.
+When you start the bot, use the /info command, where you will be presented with a choice between generating photos and text. Select one of the two options and start generating. After each generation, you can return to the main menu to select a different generation method
 
 ## Contributing
 
@@ -65,10 +65,6 @@ When you start the bot, you'll see a keyboard with buttons to choose between gen
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
